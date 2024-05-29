@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Index{% endblock %}
+
+{% block content %}
+<div class="index-container">
+    <h1>Welcome to Health AI</h1>
+    <a href="{{ url_for('login') }}">Login</a>
+    <a href="{{ url_for('register') }}">Register</a>
+</div>
+{% endblock %}

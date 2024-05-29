@@ -1,0 +1,309 @@
+/* General styles for body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0f7fa; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('static/bg.avif'); 
+    background-size: cover;
+    background-position: center;
+    animation: fadeIn 2s ease-in;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #007bff;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #f8f9fa;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+
+/* Additional styles for the register page */
+.register-container {
+    padding: 30px 50px;
+    margin: auto;
+    background-color: #e3f2fd; /* Light blue background for the container */
+    border: 1px solid #90caf9;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-out;
+}
+
+.register-container h2 {
+    margin-bottom: 20px;
+}
+
+.register-container form div {
+    margin-bottom: 15px;
+}
+
+.register-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.register-container input[type="text"],
+.register-container input[type="number"],
+.register-container input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 18px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.register-container input[type="text"]:focus,
+.register-container input[type="number"]:focus,
+.register-container input[type="password"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+.register-container button {
+    top: 20px;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.register-container button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+
+
+/* Container for the main content */
+.container {
+    background: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px 50px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-100px); }
+    to { transform: translateY(0); }
+}
+
+/* Header styles */
+h1, h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 2.5em;
+    animation: textFadeIn 1.5s ease-in;
+}
+
+@keyframes textFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Link styles */
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 30px;
+    background-color: #007bff;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1.2em;
+}
+
+a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+/* Main section */
+main {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+main .about h2 {
+    color: #1e90ff;
+    margin-bottom: 20px;
+}
+
+main .about p {
+    margin-bottom: 20px;
+}
+
+main .about ul {
+    list-style: disc inside;
+    margin-bottom: 20px;
+}
+
+main .about ul li {
+    margin-bottom: 10px;
+}
+
+main .about h3 {
+    color: #1e90ff;
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #1e90ff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Form element styles */
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input[type="text"], input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 18px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Additional styles for the login page */
+.login-container {
+    padding: 30px 50px;
+    margin: auto;
+    background-color: #e3f2fd; /* Light blue background for the container */
+    border: 1px solid #90caf9;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-out;
+}
+
+/* Additional styles for the index page */
+.index-container {
+    padding: 50px;
+    animation: fadeIn 2s ease-in;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+    border-radius: 15px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    text-align: center;
+}
+
+.index-container a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 35px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.index-container a:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+.logout{
+    margin-left: 100px;
+}
+
+/* Style for prediction result */
+.prediction-result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #bbdefb; /* Light blue background for result */
+    border-radius: 8px;
+    animation: textFadeIn 1.5s ease-in;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #333;
+}
